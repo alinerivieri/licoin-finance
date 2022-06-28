@@ -1,0 +1,86 @@
+.coins {
+    width: 100%;
+    padding: 4rem 0;
+}
+
+.coins .container {
+    display: grid;
+    grid-template-columns: repeat(1, 6fr);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.coins .left p {
+    margin: 1rem 0;
+}
+
+.coins .right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.coins .right .card {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 22px;
+    margin: .4rem;
+    width: 170px;
+    height: 170px;
+    border-radius: 24px;
+    border: 1px solid #d3dede;
+    box-shadow: rgb(0, 0, 0 / 12%) 0px 8px 13px;
+    text-align: center;
+}
+
+.coins .card .top {
+    display: flex;
+    flex-direction: column;
+}
+
+.coins .right img {
+    width: 50px;
+    margin: auto;
+    padding: .3rem 0;
+}
+
+.coins .right .card:hover {
+    box-shadow: rgb(0, 0, 0 / 20%) 0px 8px 24px;
+}
+
+.coins .icon {
+    font-size: 1.8rem;
+    margin: auto;
+    padding-top: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+.coins span {
+    font-size: 22px;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green
+}
+
+@media screen and (max-width: 940px) {
+    .coins .container {
+        grid-template-columns: 1fr;
+    }
+
+    .coins .left .btn {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .coins .container .right .card {
+        width: 100%;
+    }
+}

@@ -1,0 +1,40 @@
+.contact {
+    width: 100%;
+}
+
+
+.contact .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.contact form {
+    width: 50%;
+    margin: 1rem;
+}
+
+.contact .form-container div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contact form input,
+textarea {
+    margin: .6rem 0;
+    outline: none;
+}
+
+.contact textarea {
+    resize: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .contact form {
+        width: 80%;
+    }
+
+}

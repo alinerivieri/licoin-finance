@@ -1,0 +1,70 @@
+.wallet .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+
+.wallet .left {
+    text-align: center;
+    margin: 5rem;
+}
+
+.wallet img {
+    width: 90%;
+}
+
+.wallet img:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+
+.wallet .right p {
+    margin: 2rem 0;
+}
+
+.wallet .right input {
+    margin: 1rem;
+    outline: none;
+}
+
+.wallet .right .btn {
+    margin: 1rem;
+}
+
+.wallet form {
+    width: 100%;
+    margin: 1rem;
+}
+
+.wallet .form-check {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.wallet .check span {
+    display: inline-block;
+
+}
+
+.wallet form .checkbox {
+    display: flex;
+    width: 20px;
+}
+
+
+@media screen and (max-width:768px) {
+    .wallet .container {
+        grid-template-columns: 1fr;
+    }
+
+    .wallet img {
+        width: 200px;
+    }
+
+    .wallet form {
+        width: 80%;
+    }
+}
